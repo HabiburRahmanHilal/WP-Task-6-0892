@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Library Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   
+    <div id="bookList" class="side-panel">
+        <h2>Book List</h2>
+        <ul id="bookListUL">
+           
+        </ul>
+    </div>
+
+    <div id="addBook" class="central-panel">
+        <h2>Add New Book</h2>
+        <form id="bookForm">
+            <input type="text" id="bookTitle" placeholder="Title" required>
+            <input type="text" id="bookAuthor" placeholder="Author" required>
+            <input type="text" id="bookIsbn" placeholder="ISBN" required>
+            <br>
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="duplicateError" class="error hidden">This book already exists!</div>
+    </div>
+
+    <div id="search" class="side-panel">
+        <h2>Search for Books</h2>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <br>
+        <button id="searchButton">Search</button>
+        <ul id="searchResultsUL">
+            
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
